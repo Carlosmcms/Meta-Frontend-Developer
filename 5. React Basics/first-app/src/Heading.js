@@ -1,7 +1,3 @@
-function Heading (props) {
-  return (
-    <h1>Hello, {props.firstName}</h1>
-  )
-}
+const Heading = props => <h1>Hello, props.firstName</h1>
 
 export default Heading
