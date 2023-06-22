@@ -1,0 +1,8 @@
+/* scss syntax */
+$font-stack: arial;
+$primary-color: lightblue;
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}

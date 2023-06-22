@@ -1,0 +1,128 @@
+/* Create variables */
+:root {
+    --main-green: #2a8c7a;
+    --main-salmon: #e57d74;
+    --main-vanilla: #ece3a8;
+    --main-blue: #629ac5;
+    --main-purple: #b4aee6;
+    --white: #f1f1f1;
+    --black: #383838;
+
+    --main-font:  GillSansMTStd-Book,Helvetica,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* Create animation */
+@keyframes link_hover {
+    0% {
+        color: var(--black);
+    }
+    20% {
+        color: var(--main-green);
+    }
+    40% {
+        color: var(--main-blue);
+    }
+    80% {
+        color: var(--main-salmon);
+    }
+}
+
+/* Set the layout */
+body {
+    display: grid;
+    height: 150vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: var(--main-vanilla);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: stretch;
+}
+
+main {
+    background-color: var(--main-purple);
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+}
+
+footer {
+    background-color: var(--main-salmon);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% auto;
+    border-top: 3px solid var(--black);
+}
+
+/* Customize the other elements */
+nav {
+    background-color: var(--white);
+    padding: 1px 0px;
+    border-bottom: 3px solid var(--black);
+}
+
+ul {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+li {
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: var(--black);
+}
+
+h1, h2, p {
+    font-family: var(--main-font);
+    text-align: justify;
+}
+
+section {
+    padding: 3%;
+}
+
+main > #promotion {
+    background-color: var(--main-blue);
+    border-bottom: 1px solid var(--black);
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--main-font);
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallery > .secondary-article {
+    flex: 1;
+    padding: 0% 2%;
+}
+
+#logo-header, #logo-footer {
+    width: 50px;
+    height: 100px;
+    padding: 30px 1vh;
+}
+
+/* Link states */
+a:visited {
+    color: var(--main-green);
+}
+
+a:hover {
+    animation: link_hover 2s ease 0s 1 none running;
+    color: var(--main-salmon);
+}

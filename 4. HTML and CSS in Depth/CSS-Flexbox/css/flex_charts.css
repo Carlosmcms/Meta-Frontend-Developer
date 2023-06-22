@@ -1,0 +1,59 @@
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.row #pasta {
+    flex-basis: 35%;
+    background-color: #ee9972;
+}
+
+.row #pizza {
+    flex-basis: 50%;
+    background-color: #f4ce14;
+}
+
+.row #burrito {
+    flex-basis: 15%;
+    background-color: #495e57;
+}
+
+.row .label {
+    flex: 0 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row .row_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    height: 400px;
+    max-width: 300px;
+    align-items: stretch;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.bar {
+    border-right: 1px solid whitesmoke;
+}
+
+.female { background: #f4ce14; }
+.male { background: #495e57; }

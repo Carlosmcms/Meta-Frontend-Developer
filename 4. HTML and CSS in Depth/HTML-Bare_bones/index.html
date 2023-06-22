@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Bare Bones Layout</title>
+        <meta name="description" content="A brief description">
+        <meta name="author" content="your name">
+
+        <!-- Open Graph Protocol -->
+        <!-- If the web page is about to be shared on social media. -->
+
+        <meta property="og:title" content="A brief description">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.mysite.com">
+        <meta property="og:description" content="A brief description">
+        <meta property="og:image" content="image.png">
+
+        <!-- Section for icons -->
+        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.svg" type="image/save+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+        <header>
+            <!-- For conventions, the header menu uses an unordered list for the navigation links -->
+            <nav>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Article is used for self-contained pieces -->
+            <article>
+                <h2>My Summer Holiday</h2>
+                <p>This summer I visited my grandparents.</p>
+            </article>
+            <!-- Section is similar to article -->
+            <section>
+                <h2></h2>
+                <p></p>
+            </section>
+        </main>
+
+        <!-- Login Form -->
+        <form method="POST">
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" minlength="2" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" minlength="2" required>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+
+        <form method="POST">
+            <!-- Radio buttons -->
+            <div>
+                <fieldset id="size">
+                    <label>
+                        <input type="radio" name="size" value="2"> 2-person table
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="4" checked> 4-person table
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="6"> 6-person table
+                    </label>
+                </fieldset>
+                <fieldset id="location">
+                    <label>
+                        <input type="radio" name="location" value="indoors"> Indoors
+                    </label>
+                    <label>
+                        <input type="radio" name="location" value="outdoors"> Outdoors
+                    </label>
+                </fieldset>
+            </div>
+
+            <!-- Interactive Form Elements -->
+            <div>
+                <label for="booking_date">Booking Date:</label>
+                <input type="date" name="booking_date" id="booking_date">
+            </div>
+            <div>
+                <label for="booking_people"></label>
+                <input type="range" name="booking_people" id="booking_people" min="1" max="10"  value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+                <button type="submit">Book Table</button>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            </div>
+        </form>
+
+        <!-- Media Elements -->
+        <audio>
+            <source src="path.mp3" type="audio/mpeg">
+        </audio>
+        <video>
+            <source src="video.ogg" type="video/ogg">
+        </video>
+        <footer></footer>
+        <script src="js/scripts.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    </body>
+</html>

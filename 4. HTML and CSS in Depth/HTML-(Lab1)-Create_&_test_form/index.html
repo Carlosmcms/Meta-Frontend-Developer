@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Little Lemon</title>
+
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type"  content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url"   content="https://littlelemon/">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <img src="logo.png">
+    </header>
+    <main>
+
+    </main>
+    <form action="">
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" minlength="2" required>
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" minlength="2" required>
+        </div>
+        <button type="submit">Log In</button>
+    </form>
+
+    <form method="POST">
+        <!-- Radio buttons -->
+        <div>
+            <fieldset id="size">
+                <label>
+                    <input type="radio" name="size" value="2"> 2-person table
+                </label>
+                <label>
+                    <input type="radio" name="size" value="4" checked> 4-person table
+                </label>
+                <label>
+                    <input type="radio" name="size" value="6"> 6-person table
+                </label>
+            </fieldset>
+            <fieldset id="location">
+                <label>
+                    <input type="radio" name="location" value="indoors"> Indoors
+                </label>
+                <label>
+                    <input type="radio" name="location" value="outdoors"> Outdoors
+                </label>
+            </fieldset>
+        </div>
+
+        <!-- Interactive Form Elements -->
+        <div>
+            <label for="booking_date">Booking Date:</label>
+            <input type="date" name="booking_date" id="booking_date">
+        </div>
+        <div>
+            <label for="booking_people"></label>
+            <input type="range" name="booking_people" id="booking_people" min="1" max="10"  value="4" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+            <button type="submit">Book Table</button>
+        </div>
+        <div>
+            <label for="booking_location">location</label>
+            <input id="booking_location" name="booking_location" list="locations">
+            <datalist id="locations">
+                <option value="Downtown"></option>
+                <option value="Uptown"></option>
+            </datalist>
+        </div>
+    </form>
+</body>
+
+</html>

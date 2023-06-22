@@ -1,0 +1,61 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes mymove {
+    from { property: value }
+    to { property: value }
+}
+
+@keyframes animation-name {
+    0%, 100% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+}
+
+.transform-class {
+	transform: rotate(60deg);
+	transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+	transform: translate(10px, 20px);
+	transform: scale(2);
+	transform: skew(100deg);
+	transform: none;
+	transform: inherit;
+	transform: initial;
+	transform: revert;
+	transform: revert-layer;
+	transform: unset;
+
+	transform-origin: 10px 10px;
+}
+
+.transition-class {
+    transition: property duration timing-function delay;
+	transition: margin-left 2s ease-in-out 0.5s;
+
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition-delay: 1s;
+}
+
+.animation-class {
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+    animation: none 2s ease 0.5s 4 normal none running;
+
+    animation-name: none;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+
