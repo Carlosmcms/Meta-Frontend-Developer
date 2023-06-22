@@ -1,13 +1,13 @@
-import './App.css';
-import Heading from './Heading.js';
+import './App.css'
+import Heading from './Heading.js'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <Heading firstName="Bob" />
-      <Heading firstName="Mary" />
+    <div className='App'>
+      <Heading firstName='Bob' />
+      <Heading firstName='Mary' />
     </div>
-  );
+  )
 };
 
-export default App;
+export default App

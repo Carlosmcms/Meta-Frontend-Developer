@@ -11,6 +11,9 @@
 ## Standard lint
 ```npm install standard -D```
 
+### Use Standard to fix style
+```npx standard --fix```
+
 ## Nodemon
 ```npm install nodemon || --save-dev```
 
