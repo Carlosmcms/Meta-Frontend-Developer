@@ -1,11 +1,6 @@
 
 import './App.css';
-
-function Heading() {
-  return (
-    <h1>This is an h1 heading</h1>
-  )
-}
+import Heading from './Heading.js';
 
 function App() {
   return (
