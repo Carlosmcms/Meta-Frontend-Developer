@@ -1,6 +1,9 @@
 import Heading from './Components/Heading.js'
 import Card from './Components/Card.js'
 import NumberGuess from './Components/NumberGuess.js'
+import InputComponent from './Components/InputComponent.js'
+import RegisterForm from './Components/RegisterForm.js'
+
 import './App.css'
 
 const App = () => (
@@ -19,6 +22,14 @@ const App = () => (
     <div id='event-handle'>
       <h1>Event Handle Practice</h1>
       <NumberGuess />
+    </div>
+    <div>
+      <h1>Hooks Practice</h1>
+      <InputComponent />
+    </div>
+    <div>
+      <h1>Extended Hooks Practice</h1>
+      <RegisterForm />
     </div>
   </div>
 )
