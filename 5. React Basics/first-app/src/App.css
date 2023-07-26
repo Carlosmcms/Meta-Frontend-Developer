@@ -7,9 +7,3 @@ div.component-container {
   border-radius: 20px;
   margin: 10vh 5vw;
 }
-
-#card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

@@ -1,45 +1,35 @@
-import Heading from './Components/Heading.js'
-import Card from './Components/Card/Card.js'
-import NumberGuess from './Components/NumberGuess.js'
-import InputComponent from './Components/InputComponent.js'
-import RegisterForm from './Components/RegisterForm.js'
-import ReducerExampleComponent from './Components/ReducerExampleComponent.js'
+import { Routes, Route, Link } from 'react-router-dom'
+
+import Homepage from './Pages/Homepage.js'
+import CardContainer from './Exercises/Card-Container/CardContainer.js'
+import ContextExample from './Exercises/Context-Example/ContextExample.js'
+import EventHandleExample from './Exercises/Event-Handle/EventHandleExample.js'
+import HeadingPractice from './Exercises/Heading-Practice/HeadingPractice.js'
+import HooksPractice from './Exercises/Hooks-Practice/HooksPractice.js'
+import StateExample from './Exercises/Managing-State/StateExample.js'
 
 import './App.css'
 
 const App = () => (
   <div className='App'>
-    <div className='component-container' id='heading-practice'>
-      <h1>Heading Practice</h1>
-      <Heading firstName='Bob' />
-      <Heading firstName='Mary' />
-    </div>
-    <div className='component-container' id='card-container'>
-      <h1>Card Practice</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
-    <div className='component-container' id='event-handle'>
-      <h1>Event Handle Practice</h1>
-      <NumberGuess />
-    </div>
-    <div className='component-container' id='hooks-practice'>
-      <h1>Hooks Practice</h1>
-      <InputComponent />
-    </div>
-    <div className='component-container' id='extended-hooks-practice'>
-      <h1>Extended Hooks Practice</h1>
-      <RegisterForm />
-    </div>
-    <div className='component-container' id='reducer-example'>
-      <h1>Reducer Example</h1>
-      <ReducerExampleComponent />
-    </div>
-    {/* <div className='component-container' id='use-context-example'>
-      <h1>useContext Example</h1>
-      <MealsContainer />
-    </div> */}
+    <nav className='nav'>
+      <Link to='/'>Homepage</Link>
+      <Link to='/Exercises/Heading-Practice'>Heading Practice</Link>
+      <Link to='/Exercises/Card-Container'>Card Container</Link>
+      <Link to='/Exercises/Context-Example'>Context Example</Link>
+      <Link to='/Exercises/Event-Handle-Example'>Event Handle Example</Link>
+      <Link to='/Exercises/Hooks-Practice'>Hooks Practice</Link>
+      <Link to='/Exercises/State-Example'>Managing State</Link>
+    </nav>
+    <Routes>
+      <Route path='/' element={<Homepage />} />
+      <Route path='/Exercises/Heading-Practice' element={<HeadingPractice />} />
+      <Route path='/Exercises/Card-Container' element={<CardContainer />} />
+      <Route path='/Exercises/Context-Example' element={<ContextExample />} />
+      <Route path='/Exercises/Event-Handle-Example' element={<EventHandleExample />} />
+      <Route path='/Exercises/Hooks-Practice' element={<HooksPractice />} />
+      <Route path='/Exercises/State-Example' element={<StateExample />} />
+    </Routes>
   </div>
 )
 

@@ -1,3 +1,3 @@
-const FruitsCounter = () => (<h2>Total fruits: 2</h2>)
+const FruitsCounter = (props) => (<h2>Total fruits: {props.fruits.length}</h2>)
 
 export default FruitsCounter
