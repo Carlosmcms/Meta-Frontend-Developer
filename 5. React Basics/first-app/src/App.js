@@ -13,13 +13,13 @@ import './App.css'
 const App = () => (
   <div className='App'>
     <nav className='nav'>
-      <Link to='/'>Homepage</Link>
-      <Link to='/Exercises/Heading-Practice'>Heading Practice</Link>
-      <Link to='/Exercises/Card-Container'>Card Container</Link>
-      <Link to='/Exercises/Context-Example'>Context Example</Link>
-      <Link to='/Exercises/Event-Handle-Example'>Event Handle Example</Link>
-      <Link to='/Exercises/Hooks-Practice'>Hooks Practice</Link>
-      <Link to='/Exercises/State-Example'>Managing State</Link>
+      <Link to='/' className='nav-item'>Homepage</Link>
+      <Link to='/Exercises/Heading-Practice' className='nav-item'>Heading Practice</Link>
+      <Link to='/Exercises/Card-Container' className='nav-item'>Card Container</Link>
+      <Link to='/Exercises/Context-Example' className='nav-item'>Context Example</Link>
+      <Link to='/Exercises/Event-Handle-Example' className='nav-item'>Event Handle Example</Link>
+      <Link to='/Exercises/Hooks-Practice' className='nav-item'>Hooks Practice</Link>
+      <Link to='/Exercises/State-Example' className='nav-item'>Managing State</Link>
     </nav>
     <Routes>
       <Route path='/' element={<Homepage />} />

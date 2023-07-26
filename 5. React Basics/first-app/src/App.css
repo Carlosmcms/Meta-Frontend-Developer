@@ -7,3 +7,28 @@ div.component-container {
   border-radius: 20px;
   margin: 10vh 5vw;
 }
+nav {
+  background: #ee9972;
+  padding: 20px;
+}
+
+.nav-item {
+  color: #edefee;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.nav-item:hover {
+  animation: link_hover 1s ease 0s 1 forwards running;
+}
+
+.nav-item:active {
+  color: #e04d50;
+}
+
+@keyframes link_hover {
+  20%, 100% {
+    color: #151e3f;
+  }
+}
