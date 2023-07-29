@@ -72,3 +72,6 @@ Consider ```package.json``` file. To add lint configuration with Standard, it sh
   }
 }
 ```
+
+## React Player (Video/Audio)
+```npm install react-player```
