@@ -8,6 +8,7 @@ import HeadingPractice from './Exercises/Heading-Practice/HeadingPractice.js'
 import HooksPractice from './Exercises/Hooks-Practice/HooksPractice.js'
 import StateExample from './Exercises/Managing-State/StateExample.js'
 import ConditionalRenderingExample from './Exercises/Conditional-Rendering/ConditionalRenderingExample.js'
+import EmbeddedAssetsExample from './Exercises/Embedded-Assets/EmbeddedAssetsExample.js'
 
 import './App.css'
 
@@ -22,6 +23,7 @@ const App = () => (
       <Link to='/Exercises/Hooks-Practice' className='nav-item'>Hooks Practice</Link>
       <Link to='/Exercises/State-Example' className='nav-item'>Managing State</Link>
       <Link to='/Exercises/Rendering-Example' className='nav-item'>Rendering</Link>
+      <Link to='/Exercises/Embedded-Assets-Example' className='nav-item'>Embedded Assets</Link>
     </nav>
     <Routes>
       <Route path='/' element={<Homepage />} />
@@ -32,6 +34,7 @@ const App = () => (
       <Route path='/Exercises/Hooks-Practice' element={<HooksPractice />} />
       <Route path='/Exercises/State-Example' element={<StateExample />} />
       <Route path='/Exercises/Rendering-Example' element={<ConditionalRenderingExample />} />
+      <Route path='/Exercises/Embedded-Assets-Example' element={<EmbeddedAssetsExample />} />
     </Routes>
   </div>
 )
