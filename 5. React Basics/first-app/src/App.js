@@ -7,6 +7,7 @@ import EventHandleExample from './Exercises/Event-Handle/EventHandleExample.js'
 import HeadingPractice from './Exercises/Heading-Practice/HeadingPractice.js'
 import HooksPractice from './Exercises/Hooks-Practice/HooksPractice.js'
 import StateExample from './Exercises/Managing-State/StateExample.js'
+import ConditionalRenderingExample from './Exercises/Conditional-Rendering/ConditionalRenderingExample.js'
 
 import './App.css'
 
@@ -20,6 +21,7 @@ const App = () => (
       <Link to='/Exercises/Event-Handle-Example' className='nav-item'>Event Handle Example</Link>
       <Link to='/Exercises/Hooks-Practice' className='nav-item'>Hooks Practice</Link>
       <Link to='/Exercises/State-Example' className='nav-item'>Managing State</Link>
+      <Link to='/Exercises/Rendering-Example' className='nav-item'>Rendering</Link>
     </nav>
     <Routes>
       <Route path='/' element={<Homepage />} />
@@ -29,6 +31,7 @@ const App = () => (
       <Route path='/Exercises/Event-Handle-Example' element={<EventHandleExample />} />
       <Route path='/Exercises/Hooks-Practice' element={<HooksPractice />} />
       <Route path='/Exercises/State-Example' element={<StateExample />} />
+      <Route path='/Exercises/Rendering-Example' element={<ConditionalRenderingExample />} />
     </Routes>
   </div>
 )
