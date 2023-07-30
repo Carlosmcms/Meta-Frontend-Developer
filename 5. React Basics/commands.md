@@ -1,7 +1,11 @@
 # Basics
 
 ## Create React App
-```npm create-react-app [app-name]```
+[RECOMMENDED] This will execute without downloading. This will ensure to use the latest version of any npm package.   
+```npx create-react-app [app-name]```  
+  
+This will download the package and execute.   
+```npm init react-app [app-name]```
 
 # Others
 
