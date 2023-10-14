@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+div.component-container {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10vh 5vw;
+}
+nav {
+  background: #56c6e5;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.nav-item {
+  color: #edefee;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.nav-item:hover {
+  animation: link_hover 1s ease 0s 1 forwards running;
+}
+
+.nav-item:active {
+  color: #515151;
+}
+
+@keyframes link_hover {
+  20%, 100% {
+    color: #151e3f;
+  }
+}

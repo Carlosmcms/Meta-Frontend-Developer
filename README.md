@@ -9,9 +9,7 @@ Coursera's Meta Front-End Developer path.
 [3. Version Control](./3.%20Version%20Control/README.md)<br>
 [4. HTML and CSS in depth](./4.%20HTML%20and%20CSS%20in%20Depth/README.md)<br>
 [5. React Basics](./5.%20React%20Basics/README.md)
-
-
-### 6. Advanced React
+[6. Advanced React](./6.%20Advanced%20React/README.md)
 
 
 ### 7. Principles of UI/UX Design
@@ -21,3 +19,6 @@ Coursera's Meta Front-End Developer path.
 
 
 ### 9. Coding Interview Preparation
+
+## Additional Information
+- [React Commands](./5.%20React%20Basics/commands.md)

@@ -7,6 +7,10 @@
 This will download the package and execute.   
 ```npm init react-app [app-name]```
 
+# Common Libraries
+## React Router
+`npm install react-router-dom`
+
 # Others
 
 ## Eslint
@@ -14,12 +18,11 @@ This will download the package and execute.
 
 ## Standard lint
 ```npm install standard -D```
+###### To configure "Format on Save" in VSCode, go to settings.json and add:
+`"editor.formatOnSave": true`
 
 ### Use Standard to fix style
 ```npx standard --fix```
-
-## Nodemon
-```npm install nodemon || --save-dev```
 
 Consider ```package.json``` file. To add lint configuration with Standard, it should looks like this:
 
@@ -76,6 +79,9 @@ Consider ```package.json``` file. To add lint configuration with Standard, it sh
   }
 }
 ```
+
+## Nodemon
+```npm install nodemon || --save-dev```
 
 ## React Player (Video/Audio)
 ```npm install react-player```

@@ -1,4 +1,5 @@
-# 6. React Basics
+# 5. React Basics
+Check [commands list](./commands.md) for useful resources.
 
 ## Additional Resources
 
